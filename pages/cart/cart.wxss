@@ -1,0 +1,176 @@
+/**cart.wxss**/
+.container{
+  justify-content:unset;
+}
+.listBox{
+	width:730rpx;
+	height: 301rpx;
+	margin:10rpx 10rpx 5rpx 10rpx;
+	background-color: #FFFFFF;
+	border-radius:10rpx; 
+}
+/**商品信息**/
+.listProductData{
+	height:140rpx;
+	margin:30rpx 30rpx 0rpx 30rpx;
+	padding-bottom: 30rpx;
+}
+.productImg{
+	width:160rpx;
+	height:150rpx;
+	margin-right: 30rpx;
+}
+.dataBox{
+	margin-left: 20rpx;
+}
+.productName{
+	color: #555555;
+	font-size: 30rpx;
+}
+.changeBox{
+	height:40rpx;
+	margin-bottom: 20rpx;
+	text-align: right;
+}
+.changetImg{
+	width:40rpx;
+	height:40rpx;
+	padding:4rpx 0rpx 20rpx 0rpx;
+}
+/**金额数量**/
+.money{
+	font-size: 34rpx;
+	color:#61BFFB;
+	line-height: 40rpx;
+	display: inline-block;
+}
+.count{
+	font-size: 28rpx;
+	color:#555555;
+	line-height: 40rpx;
+	float: right;
+}
+/**添加删除**/
+.amendBox{
+	width: 710rpx;
+	height:90rpx;
+	margin:0rpx auto;
+	border-top:1rpx solid;
+	border-top-color: #dddddd;
+  line-height: 50rpx;
+}
+.amendData{
+	margin-left: 95rpx;
+	margin-top: 21rpx;
+  width:174rpx;
+  display: inline-block;
+  border:0;
+  box-sizing: border-box;
+  margin-right: 100rpx;
+}
+.reduce,.add{
+	background-color: #EEEEEE;
+	width:40rpx;
+	height:40rpx;
+	border-radius:100%; 
+	text-align: center;
+	line-height: 40rpx;
+	font-size: 28rpx;
+  vertical-align: middle;
+}
+.countData{
+	width:60rpx;
+	height:40rpx;
+	border:1rpx #AAAAAA solid;
+	margin:0rpx 17rpx;
+	vertical-align: middle;
+	box-sizing:border-box;
+	line-height:40rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color:#555555;
+}
+.countData,.reduce,.add,.border,.delData,.delImgBox,.delBox{
+	display: inline-block;
+}
+.border{
+  width:2rpx;
+  height:68rpx;
+  background-color: #dddddd;
+  margin:10rpx 0rpx;
+  vertical-align: middle;
+}
+.delImgBox{
+  vertical-align: middle;
+}
+.delBox{
+  margin-left: 100rpx;
+  border:0;
+  box-sizing: border-box;
+  line-height: 30rpx;
+}
+.delImg{
+  width:50rpx;
+  height:50rpx;
+}
+.delData{
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  color:#555555;
+}
+/**结算**/
+.settleBox{
+  width:100%;
+  height:100rpx;
+  background-color:#ffffff;
+  border-bottom: 1rpx solid #ddd;
+  margin:0px auto;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  bottom: 0px;
+}
+.allChangeBox{
+  margin-left:37rpx;
+  display: inline-block;
+}
+.allchangeImg{
+  width:50rpx;
+  height:50rpx;
+  margin-right: 15rpx;
+  vertical-align: middle;
+}
+.changeData{
+  color:#555555;
+  font-size: 28rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+.totalBox,.allChangeBox{
+  line-height: 100rpx;
+}
+.totalData{
+  color:#555555;
+  font-size: 24rpx;
+}
+.totalPrices{
+  color:#61BFFB;
+  font-size: 34rpx;
+  margin-right: 30rpx;
+  overflow: hidden;
+}
+.paymentBox{
+  width:248rpx;
+  height:100%;
+}
+.payment{
+  width:100%;
+  height:100%;
+  text-align: center;
+  background-color: #61BFFB;
+  color:#ffffff;
+  font-size: 36rpx;
+  border-radius:0;
+  line-height: 100rpx;
+}

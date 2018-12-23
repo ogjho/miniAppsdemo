@@ -1,0 +1,11 @@
+<view class="bannerBox">
+  <swiper
+        autoplay="false" indicator-dots="true" circular="true" vertical=""
+        interval="2000" duration="500" previous-margin="0rpx" next-margin="0rpx" class="banner">
+    <block wx:for="{{background}}" wx:key="*this">
+      <swiper-item class="bannerData">
+        <image class="swiper-item" src="{{item.src}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

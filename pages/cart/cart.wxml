@@ -1,0 +1,50 @@
+<!--cart.wxml-->
+<view class="container">
+  <block wx:for="{{list}}" wx:for-item="item" wx:key="item.id">
+    <view class="listBox">
+      <view class="listProductData clearfix">
+        <image src="{{item.src}}" class="productImg float_L"></image>
+        <view class="dataBox">
+          <view class="productName">{{item.name}}</view>
+          <view class="changeBox">
+            <icon wx:if="{{item.selected}}" type="success" color="#61BFFB" bindtap="selectList" data-index="{{index}}" class="changetImg" />
+            <icon wx:else type="circle" bindtap="selectList" data-index="{{index}}" class="changetImg" />
+          </view>
+          <view class="numberBox">
+            <view class="money">¥ {{item.money}}</view>
+            <view class="count">X{{item.count}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="amendBox">
+        <view class="amendData">
+          <view class="reduce" data-index="{{ index }}" bindtap="reduceCount">-</view>
+          <view class="countData">{{item.sum}}</view>
+          <!-- 如果唔写参数点知道你点击噶系边一列，所以需要用到index作为每一列噶标识 -->
+          <view class="add" data-index="{{ index }}" bindtap="addCount">+</view>
+        </view>
+        <view class="border"></view>
+        <view class="delBox" bindtap="deleteList" data-index="{{index}}">
+          <view class="delImgBox">
+            <image src="../../images/del.png" class="delImg"></image>
+          </view>
+          <view class="delData">删除</view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <view class="settleBox clearfix">
+    <view class="allChangeBox">
+      <icon wx:if="{{allSelected}}" type="success" color="#61BFFB" bindtap="allSelected" class="allchangeImg" />
+      <icon wx:else type="circle" bindtap="allSelected" class="allchangeImg" />
+      <view class="changeData">全选</view>
+    </view>
+    <view class="paymentBox float_r">
+      <button class="payment">确认付款</button>
+    </view>
+    <view class="totalBox float_r clearfix">
+      <view class="totalData float_L">应付： </view>
+      <view class="totalPrices float_r"> ¥ {{totalPrices}}</view>
+    </view>
+  </view>
+</view>
